@@ -1,4 +1,5 @@
-body {
+body,
+a {
   background-color: purple;
   color: white;
 }
