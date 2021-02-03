@@ -18,4 +18,13 @@ class MainController extends Controller
         $drink = Drink::FindOrFail($id);
         return view('pages.show-page', compact('drink'));
     } 
+
+    public function create() {
+        return view('pages.create-page');
+    }
+    public function store(request $request) {
+        // dd($request -> all());
+        Drink::create($request -> all());
+        return redirect() -> route('index-route');
+    }
 }

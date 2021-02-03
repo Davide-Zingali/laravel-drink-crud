@@ -3,7 +3,11 @@
     
     <main>
         <h2>
-            Main
+            <a href="{{route('create-route')}}">
+                <button>
+                    Add Element
+                </button>
+            </a>
         </h2>
         <div>
             <ul>
