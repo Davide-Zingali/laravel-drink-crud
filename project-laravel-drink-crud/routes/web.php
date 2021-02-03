@@ -12,3 +12,5 @@ Route::post('/store', 'MainController@store') -> name('store-route');
 
 Route::get('/edit/{id}', 'MainController@edit') -> name('edit-route');
 Route::post('/update/{id}', 'MainController@update') -> name('update-route');
+
+Route::get('/delete/{id}', 'MainController@delete') -> name('delete-route');

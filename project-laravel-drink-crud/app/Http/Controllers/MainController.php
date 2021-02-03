@@ -39,4 +39,10 @@ class MainController extends Controller
         // return redirect() -> route('show-route', $drink -> id);
         return redirect() -> route('index-route');
     }
+
+    public function delete($id) {
+        $drink = Drink::FindOrFail($id);
+        $drink -> delete(); //delete() metodo interno di laravel
+        return redirect() -> route('index-route');
+    }
 }

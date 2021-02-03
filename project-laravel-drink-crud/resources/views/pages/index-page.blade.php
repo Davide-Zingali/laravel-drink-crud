@@ -17,7 +17,7 @@
                             {{$item -> name}} -
                         </a>
                         <a href="{{route('edit-route', $item -> id)}}">Edit</a>
-                        <a href="">Delete</a>
+                        <a href="{{route('delete-route', $item -> id)}}">Delete</a>
                     </li>
                 @endforeach
             </ul>
